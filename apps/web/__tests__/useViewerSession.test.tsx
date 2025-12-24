@@ -6,7 +6,7 @@ describe("useViewerSession", () => {
     const { result } = renderHook(() => useViewerSession());
 
     await act(async () => {
-      await result.current.joinSession("");
+      await result.current.createSession("");
     });
 
     expect(result.current.status).toBe("failed");
@@ -17,10 +17,10 @@ describe("useViewerSession", () => {
     const { result } = renderHook(() => useViewerSession());
 
     await act(async () => {
-      await result.current.joinSession("abc123");
+      await result.current.createSession("abc123");
     });
 
-    expect(result.current.status).toBe("connected");
+    expect(result.current.status).toBe("idle");
     expect(result.current.session?.joinCode).toBe("ABC123");
   });
 });
