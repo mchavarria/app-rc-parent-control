@@ -1,0 +1,25 @@
+name: ParentAssist
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 16.0
+packages: {}
+targets:
+  ParentAssist:
+    type: application
+    platform: iOS
+    sources:
+      - ParentAssist
+    settings:
+      base:
+        INFOPLIST_FILE: ParentAssist/Info.plist
+    scheme:
+      testTargets:
+        - ParentAssistTests
+  ParentAssistTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - ParentAssistTests
+    dependencies:
+      - target: ParentAssist
