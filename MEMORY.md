@@ -8,6 +8,7 @@
 - Keep Android streaming logic behind a `ScreenShareController` stub until MediaProjection and WebRTC wiring is ready.
 - Add an Android foreground service + notification for visible sharing state on start/stop.
 - Build a Next.js web viewer prototype in `apps/web` with join + viewer pages and a stubbed WebRTC hook.
+- Add a WebRTC client abstraction in the web app with a signaling interface so it can be tested without a live server.
 
 ## Assumptions
 - WebRTC signaling/service endpoints will be added later; current sender UI uses a local mock session.
@@ -23,4 +24,4 @@
 - Add ReplayKit Broadcast Extension target and handoff to WebRTC sender.
 - Implement helper authentication/magic link flow.
 - Wire MediaProjection permission request and projection token handling.
-- Connect web viewer to real signaling/WebRTC pipeline.
+- Configure signaling endpoint and ICE servers for production.
