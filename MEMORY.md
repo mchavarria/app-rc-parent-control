@@ -6,6 +6,7 @@
 - Session model includes `sessionId`, `joinCode`, `expiresAt`, and `viewerUrl` per repo skill guidance.
 - Add a native Kotlin/Compose Android sender app scaffolded with Gradle files under `apps/mobile/android`.
 - Keep Android streaming logic behind a `ScreenShareController` stub until MediaProjection and WebRTC wiring is ready.
+- Add an Android foreground service + notification for visible sharing state on start/stop.
 
 ## Assumptions
 - WebRTC signaling/service endpoints will be added later; current sender UI uses a local mock session.
@@ -20,4 +21,4 @@
 - Wire session creation to real signaling service.
 - Add ReplayKit Broadcast Extension target and handoff to WebRTC sender.
 - Implement helper authentication/magic link flow.
-- Add MediaProjection foreground service + notification on Android.
+- Wire MediaProjection permission request and projection token handling.

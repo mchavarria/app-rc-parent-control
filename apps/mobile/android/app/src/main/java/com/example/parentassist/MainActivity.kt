@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
             val viewModel: SessionViewModel = viewModel(
                 factory = SessionViewModelFactory(
                     sessionService = MockSessionService(),
-                    screenShareController = MediaProjectionController()
+                    screenShareController = MediaProjectionController(applicationContext)
                 )
             )
             ParentAssistTheme {
