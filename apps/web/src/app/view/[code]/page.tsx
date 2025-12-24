@@ -1,12 +1,14 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import { useRef } from "react";
 import { ViewerStatus } from "@/components/ViewerStatus";
 import { useViewerSession } from "@/lib/useViewerSession";
 
 export default function ViewerPage() {
   const params = useParams<{ code: string }>();
-  const { status, session, joinSession, disconnect } = useViewerSession();
+  const { status, session, connect, disconnect } = useViewerSession();
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const code = params.code?.toUpperCase() ?? "";
 
@@ -18,12 +20,12 @@ export default function ViewerPage() {
         <ViewerStatus status={status} />
 
         <div className="video-shell">
-          <video autoPlay playsInline muted />
+          <video ref={videoRef} autoPlay playsInline muted />
         </div>
 
         <button
           type="button"
-          onClick={() => joinSession(code)}
+          onClick={() => connect(code, videoRef.current)}
           disabled={status === "connecting"}
         >
           {status === "connected" ? "Reconnect" : "Connect"}

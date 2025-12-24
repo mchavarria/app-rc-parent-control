@@ -6,7 +6,7 @@ import { useViewerSession } from "@/lib/useViewerSession";
 
 export default function JoinPage() {
   const router = useRouter();
-  const { status, error, joinSession } = useViewerSession();
+  const { status, error, createSession } = useViewerSession();
 
   return (
     <main>
@@ -17,7 +17,7 @@ export default function JoinPage() {
           isLoading={status === "connecting"}
           error={error}
           onJoin={async (code) => {
-            const response = await joinSession(code);
+            const response = await createSession(code);
             if (response.session) {
               router.push(`/view/${response.session.joinCode}`);
             }
