@@ -9,6 +9,7 @@
 - Add an Android foreground service + notification for visible sharing state on start/stop.
 - Build a Next.js web viewer prototype in `apps/web` with join + viewer pages and a stubbed WebRTC hook.
 - Add a WebRTC client abstraction in the web app with a signaling interface so it can be tested without a live server.
+- Split the WebRTC signaling service into `services/webrtc` to keep client and service deployments independent.
 
 ## Assumptions
 - WebRTC signaling/service endpoints will be added later; current sender UI uses a local mock session.
