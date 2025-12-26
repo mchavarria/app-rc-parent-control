@@ -6,7 +6,8 @@ final class SessionViewModelTests: XCTestCase {
     func testStartSessionRequiresConsent() {
         let viewModel = SessionViewModel(
             sessionService: StubSessionService(),
-            screenShareController: StubScreenShareController()
+            screenShareController: StubScreenShareController(),
+            webrtcStreamer: StubWebRTCStreamer()
         )
 
         viewModel.startSession()
@@ -23,7 +24,8 @@ final class SessionViewModelTests: XCTestCase {
         )
         let viewModel = SessionViewModel(
             sessionService: StubSessionService(session: session),
-            screenShareController: StubScreenShareController()
+            screenShareController: StubScreenShareController(),
+            webrtcStreamer: StubWebRTCStreamer()
         )
 
         viewModel.hasAcceptedConsent = true
@@ -63,4 +65,11 @@ private struct StubSessionService: SessionServicing {
 private struct StubScreenShareController: ScreenShareControlling {
     func startSharing() async throws { }
     func stopSharing() async { }
+}
+
+private struct StubWebRTCStreamer: WebRTCStreaming {
+    func connect(sessionId: String) async throws {
+        _ = sessionId
+    }
+    func disconnect() async { }
 }

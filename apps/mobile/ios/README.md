@@ -16,3 +16,4 @@ Then open `ParentAssist.xcodeproj` in Xcode.
 
 ## Notes
 - ReplayKit streaming is stubbed behind a protocol. This keeps the UI/testable logic in place while signaling/WebRTC are wired up.
+- Set `SIGNALING_URL` in the scheme environment or update the `SignalingURL` key in `Info.plist`.

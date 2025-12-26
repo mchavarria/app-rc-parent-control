@@ -2,17 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>CFBundleDisplayName</key>
-  <string>Parent Assist</string>
-  <key>CFBundleIdentifier</key>
-  <string>com.example.parentassist</string>
-  <key>CFBundleName</key>
-  <string>ParentAssist</string>
-  <key>CFBundleShortVersionString</key>
-  <string>1.0</string>
-  <key>CFBundleVersion</key>
-  <string>1</string>
-  <key>UILaunchScreen</key>
-  <dict/>
+	<key>CFBundleDisplayName</key>
+	<string>Parent Assist</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.example.ParentAssist</string>
+	<key>CFBundleName</key>
+	<string>com.example.ParentAssist</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>SignalingURL</key>
+	<string>ws://localhost:8080</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
 </dict>
 </plist>

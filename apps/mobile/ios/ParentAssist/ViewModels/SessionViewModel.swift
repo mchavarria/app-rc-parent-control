@@ -15,10 +15,16 @@ final class SessionViewModel: ObservableObject {
 
     private let sessionService: SessionServicing
     private let screenShareController: ScreenShareControlling
+    private let webrtcStreamer: WebRTCStreaming
 
-    init(sessionService: SessionServicing, screenShareController: ScreenShareControlling) {
+    init(
+        sessionService: SessionServicing,
+        screenShareController: ScreenShareControlling,
+        webrtcStreamer: WebRTCStreaming
+    ) {
         self.sessionService = sessionService
         self.screenShareController = screenShareController
+        self.webrtcStreamer = webrtcStreamer
     }
 
     func startSession() {
@@ -31,6 +37,7 @@ final class SessionViewModel: ObservableObject {
         Task {
             do {
                 let session = try await sessionService.createSession()
+                try await webrtcStreamer.connect(sessionId: session.sessionId)
                 try await screenShareController.startSharing()
                 state = .sharing(session)
             } catch {
@@ -43,6 +50,7 @@ final class SessionViewModel: ObservableObject {
         guard case let .sharing(session) = state else { return }
 
         Task {
+            await webrtcStreamer.disconnect()
             await screenShareController.stopSharing()
             await sessionService.stopSession(session)
             state = .idle
