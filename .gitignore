@@ -1,0 +1,51 @@
+# macOS/Linux
+.DS_Store
+Thumbs.db
+
+# Environment and logs
+.env
+.env.*.local
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Node / TypeScript (web + services)
+node_modules/
+pnpm-store/
+.pnp.*
+*.tsbuildinfo
+coverage/
+dist/
+build/
+out/
+.turbo/
+.next/
+.vercel/
+
+# Android (apps/mobile/android)
+.gradle/
+**/build/
+**/.cxx/
+**/captures/
+local.properties
+*.iml
+*.keystore
+*.jks
+*.apk
+*.ap_?
+*.aar
+.idea/
+
+# iOS (apps/mobile/ios)
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.ipa
+Pods/
+Carthage/Build/
