@@ -1,8 +1,8 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { JoinForm } from "@/components/JoinForm";
-import { useViewerSession } from "@/lib/useViewerSession";
+import { JoinForm } from "../../components/JoinForm";
+import { useViewerSession } from "../../lib/useViewerSession";
 
 export default function JoinPage() {
   const router = useRouter();

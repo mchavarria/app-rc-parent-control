@@ -2,8 +2,9 @@
 
 import { useParams } from "next/navigation";
 import { useRef } from "react";
-import { ViewerStatus } from "@/components/ViewerStatus";
-import { useViewerSession } from "@/lib/useViewerSession";
+import { useViewerSession } from "../../../lib/useViewerSession";
+import { ViewerStatus } from "../../../components/ViewerStatus";
+
 
 export default function ViewerPage() {
   const params = useParams<{ code: string }>();

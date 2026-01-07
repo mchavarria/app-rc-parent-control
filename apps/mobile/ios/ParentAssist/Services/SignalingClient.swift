@@ -37,7 +37,7 @@ enum SignalingMessage: Codable {
         case let .join(sessionId, role):
             try container.encode(MessageType.join, forKey: .type)
             try container.encode(sessionId, forKey: .sessionId)
-            try container.encode(role, forKey: .role)
+            try container.encode(role.rawValue, forKey: .role)
         case .ready:
             try container.encode(MessageType.ready, forKey: .type)
         case let .offer(sdp):
@@ -61,7 +61,10 @@ enum SignalingMessage: Codable {
         switch type {
         case .join:
             let sessionId = try container.decode(String.self, forKey: .sessionId)
-            let role = try container.decode(SignalingRole.self, forKey: .role)
+            let roleString = try container.decode(String.self, forKey: .role)
+            guard let role = SignalingRole(rawValue: roleString) else {
+                throw DecodingError.dataCorruptedError(forKey: .role, in: container, debugDescription: "Invalid role")
+            }
             self = .join(sessionId: sessionId, role: role)
         case .ready:
             self = .ready

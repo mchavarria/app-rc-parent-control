@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1621D603AA1A47DBCDFEB4A2 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506F4B54710D71E420987809 /* SessionViewModel.swift */; };
+		276612B9E562AD8A5FCFAAEE /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23644A55185B2695144210A /* SessionService.swift */; };
+		328ACB100AF4BC86DB21CD0F /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D4139A39A8961C57C08BE /* AppConfig.swift */; };
+		36664157F6C471DBB5A8D411 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8402D3A206F426104DE71CF /* StartView.swift */; };
+		49C3C5A070BC617EEF12DC87 /* ReplayKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433EE7ABB37D85D84D86C215 /* ReplayKitController.swift */; };
+		687E3526DB6B3D032873DD4D /* SessionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A00027EFAEE8B0A4516CE /* SessionServiceTests.swift */; };
+		7A2BDC819D73AEE09951FA12 /* SharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3A2E955557832B67EDB34 /* SharingView.swift */; };
+		896C86DEEA45D978A8C59EA9 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3873D0716694F3D45EE0EF /* SignalingClient.swift */; };
+		9711FD3992DA9E20F9B88584 /* WebRTCStreamerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24159892FC701589DAD0491D /* WebRTCStreamerTests.swift */; };
+		9AA87E97606CA120CECCB826 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B62B95B4BA04E6C7EE8249 /* RootView.swift */; };
+		A20130E348D567F5A1E847A1 /* SessionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE87E10EF9602DA99EBBDF /* SessionViewModelTests.swift */; };
+		B54317F84405C7D225BBBAC0 /* WebRTCStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD0A86AD36AE5D5437C3A9 /* WebRTCStreamer.swift */; };
+		CA01F526A9C6F0AAE5699BFB /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE7964966FBFDCF52BDDC1 /* ConsentView.swift */; };
+		E1CC01B94F324CDA928ABD1F /* ShareSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B4F7A75ADD01CCF09A7D81 /* ShareSession.swift */; };
+		E2DB89C4995091547F712C64 /* ParentAssistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD29EFA8DB8DDAF51DA50257 /* ParentAssistApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92C46236CE28A95B917AC668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D0BD99912E849104A07EB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B68747F07DA0A65608889DA;
+			remoteInfo = ParentAssist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E3A2E955557832B67EDB34 /* SharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingView.swift; sourceTree = "<group>"; };
+		180D4139A39A8961C57C08BE /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		24159892FC701589DAD0491D /* WebRTCStreamerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCStreamerTests.swift; sourceTree = "<group>"; };
+		433EE7ABB37D85D84D86C215 /* ReplayKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayKitController.swift; sourceTree = "<group>"; };
+		44F109C529831B760128C651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		490A00027EFAEE8B0A4516CE /* SessionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionServiceTests.swift; sourceTree = "<group>"; };
+		506F4B54710D71E420987809 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		6604A962811A26500AF57A9A /* ParentAssist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParentAssist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77EE7964966FBFDCF52BDDC1 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		86B62B95B4BA04E6C7EE8249 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8E3873D0716694F3D45EE0EF /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
+		90B4F7A75ADD01CCF09A7D81 /* ShareSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSession.swift; sourceTree = "<group>"; };
+		9ABE87E10EF9602DA99EBBDF /* SessionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModelTests.swift; sourceTree = "<group>"; };
+		A1DD0A86AD36AE5D5437C3A9 /* WebRTCStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCStreamer.swift; sourceTree = "<group>"; };
+		A23644A55185B2695144210A /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		A8402D3A206F426104DE71CF /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		DD29EFA8DB8DDAF51DA50257 /* ParentAssistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentAssistApp.swift; sourceTree = "<group>"; };
+		DDDCA4318EF4FA4A2FCFD909 /* ParentAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParentAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		115B0C4026F6F549C33969C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				180D4139A39A8961C57C08BE /* AppConfig.swift */,
+				433EE7ABB37D85D84D86C215 /* ReplayKitController.swift */,
+				A23644A55185B2695144210A /* SessionService.swift */,
+				8E3873D0716694F3D45EE0EF /* SignalingClient.swift */,
+				A1DD0A86AD36AE5D5437C3A9 /* WebRTCStreamer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		214C7695A8ADC3AB13C9452C = {
+			isa = PBXGroup;
+			children = (
+				BC9DABB67D0FE4161A755E57 /* ParentAssist */,
+				C44E481289E819A101CABAD8 /* ParentAssistTests */,
+				56882A52B20FF534E2243940 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FB447329F1C8A2DF5792FB6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				506F4B54710D71E420987809 /* SessionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		56882A52B20FF534E2243940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6604A962811A26500AF57A9A /* ParentAssist.app */,
+				DDDCA4318EF4FA4A2FCFD909 /* ParentAssistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70B55D5330577EE3545AEA49 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90B4F7A75ADD01CCF09A7D81 /* ShareSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC9DABB67D0FE4161A755E57 /* ParentAssist */ = {
+			isa = PBXGroup;
+			children = (
+				44F109C529831B760128C651 /* Info.plist */,
+				DD29EFA8DB8DDAF51DA50257 /* ParentAssistApp.swift */,
+				70B55D5330577EE3545AEA49 /* Models */,
+				115B0C4026F6F549C33969C6 /* Services */,
+				3FB447329F1C8A2DF5792FB6 /* ViewModels */,
+				F6CF39E236DC5F254208603E /* Views */,
+			);
+			path = ParentAssist;
+			sourceTree = "<group>";
+		};
+		C44E481289E819A101CABAD8 /* ParentAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				490A00027EFAEE8B0A4516CE /* SessionServiceTests.swift */,
+				9ABE87E10EF9602DA99EBBDF /* SessionViewModelTests.swift */,
+				24159892FC701589DAD0491D /* WebRTCStreamerTests.swift */,
+			);
+			path = ParentAssistTests;
+			sourceTree = "<group>";
+		};
+		F6CF39E236DC5F254208603E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77EE7964966FBFDCF52BDDC1 /* ConsentView.swift */,
+				86B62B95B4BA04E6C7EE8249 /* RootView.swift */,
+				02E3A2E955557832B67EDB34 /* SharingView.swift */,
+				A8402D3A206F426104DE71CF /* StartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B68747F07DA0A65608889DA /* ParentAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DDBCE4525A8DC39D2DF455E /* Build configuration list for PBXNativeTarget "ParentAssist" */;
+			buildPhases = (
+				71F9D5C696E1032A8B8F0473 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParentAssist;
+			packageProductDependencies = (
+			);
+			productName = ParentAssist;
+			productReference = 6604A962811A26500AF57A9A /* ParentAssist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA2A75A7DD6A12C7F4499B3C /* ParentAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBF65BD717E0734B7725230 /* Build configuration list for PBXNativeTarget "ParentAssistTests" */;
+			buildPhases = (
+				5FC0021E57F630D0DE18A79C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				401332BB1F92B40E0A54ED86 /* PBXTargetDependency */,
+			);
+			name = ParentAssistTests;
+			packageProductDependencies = (
+			);
+			productName = ParentAssistTests;
+			productReference = DDDCA4318EF4FA4A2FCFD909 /* ParentAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D0BD99912E849104A07EB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = F97695CA6FA56E7B47F1364C /* Build configuration list for PBXProject "ParentAssist" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 214C7695A8ADC3AB13C9452C;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B68747F07DA0A65608889DA /* ParentAssist */,
+				CA2A75A7DD6A12C7F4499B3C /* ParentAssistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC0021E57F630D0DE18A79C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687E3526DB6B3D032873DD4D /* SessionServiceTests.swift in Sources */,
+				A20130E348D567F5A1E847A1 /* SessionViewModelTests.swift in Sources */,
+				9711FD3992DA9E20F9B88584 /* WebRTCStreamerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F9D5C696E1032A8B8F0473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328ACB100AF4BC86DB21CD0F /* AppConfig.swift in Sources */,
+				CA01F526A9C6F0AAE5699BFB /* ConsentView.swift in Sources */,
+				E2DB89C4995091547F712C64 /* ParentAssistApp.swift in Sources */,
+				49C3C5A070BC617EEF12DC87 /* ReplayKitController.swift in Sources */,
+				9AA87E97606CA120CECCB826 /* RootView.swift in Sources */,
+				276612B9E562AD8A5FCFAAEE /* SessionService.swift in Sources */,
+				1621D603AA1A47DBCDFEB4A2 /* SessionViewModel.swift in Sources */,
+				E1CC01B94F324CDA928ABD1F /* ShareSession.swift in Sources */,
+				7A2BDC819D73AEE09951FA12 /* SharingView.swift in Sources */,
+				896C86DEEA45D978A8C59EA9 /* SignalingClient.swift in Sources */,
+				36664157F6C471DBB5A8D411 /* StartView.swift in Sources */,
+				B54317F84405C7D225BBBAC0 /* WebRTCStreamer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		401332BB1F92B40E0A54ED86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B68747F07DA0A65608889DA /* ParentAssist */;
+			targetProxy = 92C46236CE28A95B917AC668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B2A9EC572BAC9CC53A775B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 44F267DNLK;
+				INFOPLIST_FILE = ParentAssist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParentAssist;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46368E1416E2231D5238FFB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParentAssistTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParentAssist.app/ParentAssist";
+			};
+			name = Debug;
+		};
+		6F98C9118FEA96991ECA5912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 44F267DNLK;
+				INFOPLIST_FILE = ParentAssist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParentAssist;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75E8B1A4D97193D45566CD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = m.chav.ar;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		804B76442548EECC851E3FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ParentAssistTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParentAssist.app/ParentAssist";
+			};
+			name = Release;
+		};
+		AF3D769F46D292A07876F142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = m.chav.ar;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DDBCE4525A8DC39D2DF455E /* Build configuration list for PBXNativeTarget "ParentAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2A9EC572BAC9CC53A775B2 /* Debug */,
+				6F98C9118FEA96991ECA5912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1CBF65BD717E0734B7725230 /* Build configuration list for PBXNativeTarget "ParentAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46368E1416E2231D5238FFB5 /* Debug */,
+				804B76442548EECC851E3FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F97695CA6FA56E7B47F1364C /* Build configuration list for PBXProject "ParentAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF3D769F46D292A07876F142 /* Debug */,
+				75E8B1A4D97193D45566CD44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5D0BD99912E849104A07EB9 /* Project object */;
+}
